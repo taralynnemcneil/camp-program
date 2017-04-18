@@ -33,7 +33,7 @@ namespace mdc_daycamp.Parent
                                      from cR in rID
                                      join c in conn.camperProfiles on cR.camperID equals c.ID
                                      where c.ID == camperID && r.date == currentDate2.Text
-                                     select r).First();
+                                     select r).FirstOrDefault();
 
                     // populate the form
                     signedInBy.Text = objCamper.signedInBy;
@@ -64,7 +64,7 @@ namespace mdc_daycamp.Parent
                                        from cR in rID
                                        join c in conn.camperProfiles on cR.camperID equals c.ID
                                        where c.ID == camperID && r.date == currentDate2.Text
-                                       select r).First();
+                                       select r).FirstOrDefault();
 
             //fill the properties of the camper time
             render.signedInBy = signedInBy.Text;

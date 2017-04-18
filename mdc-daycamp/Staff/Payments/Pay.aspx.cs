@@ -51,40 +51,41 @@ namespace mdc_daycamp.Staff.Payments
 
         protected void submitPayment_Click(object sender, EventArgs e)
         {
-            Int32 camperID = 0;
 
-            if (!String.IsNullOrEmpty(Request.QueryString["camperID"]))
+            // connect
+            using (muskokaEntites db = new muskokaEntites())
             {
-                camperID = Convert.ToInt32(Request.QueryString["camperID"]);
+
+                // create new payment
+                payment pay = new payment();
+
+                Int32 camperID = 0;
+
+                // check for ID in url
+                if (!String.IsNullOrEmpty(Request.QueryString["camperID"]))
+                {
+                    //get the id from the url
+                    camperID = Convert.ToInt32(Request.QueryString["camperID"]);
+
+                    // get the payment
+                    pay = (from p in db.payments
+                           where p.camperID == camperID
+                           select p).FirstOrDefault();
+                }
+
+                //fill properties to make a payment
+                pay.date = payCalendar.Text;
+                pay.amount = "$" + makePayment.Text;
+                pay.paymentType = payType.SelectedItem.Text;
+                pay.camperID = Convert.ToInt32(Request.QueryString["camperID"]);
+
+                db.payments.Add(pay);
+                db.SaveChanges();
+
+                // redirect
+                Response.Redirect("Pay.aspx");
+
             }
-
-            // connect to db
-            var conn = new muskokaEntites();
-
-            // use the payment class to create new payment
-            payment p = new payment();
-
-            p.date = payCalendar.Text;
-            p.amount = "$" + makePayment.Text;
-            p.paymentType = payType.SelectedItem.Text;
-            p.camperID = Convert.ToInt32(Request.QueryString["camperID"]);
-
-            if (camperID == 0)
-            {
-                lblPayment.Text = "Cannot Submit Payment";
-            }
-            else
-            {
-                p.camperID = camperID;
-                conn.payments.Attach(p);
-                conn.Entry(p).State = System.Data.Entity.EntityState.Modified;
-            }
-
-            conn.SaveChanges();
-
-            //redirect
-            Response.Redirect("Pay.aspx");
-
         }
     }
 }

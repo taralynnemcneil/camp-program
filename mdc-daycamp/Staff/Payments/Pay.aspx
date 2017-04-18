@@ -1,4 +1,4 @@
-﻿<%@ Page Title="" Language="C#" MasterPageFile="~/Site.Master" AutoEventWireup="true" CodeBehind="Pay.aspx.cs" Inherits="mdc_daycamp.Staff.Payments.Pay" %>
+﻿<%@ Page Title="Make Payment" Language="C#" MasterPageFile="~/Site.Master" AutoEventWireup="true" CodeBehind="Pay.aspx.cs" Inherits="mdc_daycamp.Staff.Payments.Pay" %>
 
 <asp:Content ID="Content1" ContentPlaceHolderID="MainContent" runat="server">
 
@@ -45,7 +45,7 @@
                         <asp:BoundField DataField="ID" HeaderText="ID" Visible="false" />
                         <asp:BoundField DataField="date" HeaderText="DATE" HeaderStyle-CssClass="table-header" />
                         <asp:BoundField DataField="amount" HeaderText="AMOUNT" HeaderStyle-CssClass="table-header" />
-                        <asp:BoundField DataField="payment_type" HeaderText="PAYMENT TYPE" HeaderStyle-CssClass="table-header" />
+                        <asp:BoundField DataField="paymentType" HeaderText="PAYMENT TYPE" HeaderStyle-CssClass="table-header" />
                     </Columns>
                 </asp:GridView>
             </div>
