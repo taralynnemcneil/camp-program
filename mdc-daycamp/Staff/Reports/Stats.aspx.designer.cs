@@ -7,63 +7,90 @@
 // </auto-generated>
 //------------------------------------------------------------------------------
 
-namespace mdc_daycamp {
+namespace mdc_daycamp.Staff.Reports {
     
     
-    public partial class _Default {
+    public partial class Stats {
         
         /// <summary>
-        /// RequiredFieldValidator1 control.
+        /// totalCamper control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.RequiredFieldValidator RequiredFieldValidator1;
+        protected global::System.Web.UI.WebControls.Label totalCamper;
         
         /// <summary>
-        /// firstName control.
+        /// datebox1 control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.TextBox firstName;
+        protected global::System.Web.UI.WebControls.TextBox datebox1;
         
         /// <summary>
-        /// RequiredFieldValidator2 control.
+        /// datebox2 control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.RequiredFieldValidator RequiredFieldValidator2;
+        protected global::System.Web.UI.WebControls.TextBox datebox2;
         
         /// <summary>
-        /// lastName control.
+        /// Calculate1 control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.TextBox lastName;
+        protected global::System.Web.UI.WebControls.Button Calculate1;
         
         /// <summary>
-        /// parentSubmit control.
+        /// result1 control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.Button parentSubmit;
+        protected global::System.Web.UI.WebControls.Label result1;
         
         /// <summary>
-        /// lblError control.
+        /// datebox3 control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.Label lblError;
+        protected global::System.Web.UI.WebControls.TextBox datebox3;
+        
+        /// <summary>
+        /// datebox4 control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.TextBox datebox4;
+        
+        /// <summary>
+        /// Calculate2 control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.Button Calculate2;
+        
+        /// <summary>
+        /// result2 control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.Label result2;
     }
 }

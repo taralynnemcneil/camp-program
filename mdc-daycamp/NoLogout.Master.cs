@@ -7,7 +7,7 @@ using System.Web.UI.WebControls;
 
 namespace mdc_daycamp
 {
-    public partial class Contact : Page
+    public partial class NoLogout : System.Web.UI.MasterPage
     {
         protected void Page_Load(object sender, EventArgs e)
         {

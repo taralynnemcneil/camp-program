@@ -11,7 +11,7 @@ namespace mdc_daycamp
 {
 
 
-    public partial class About
+    public partial class Logout
     {
     }
 }

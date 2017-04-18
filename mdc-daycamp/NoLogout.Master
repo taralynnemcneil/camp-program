@@ -1,4 +1,4 @@
-﻿<%@ Master Language="C#" AutoEventWireup="true" CodeBehind="Site.master.cs" Inherits="mdc_daycamp.SiteMaster" %>
+﻿<%@ Master Language="C#" AutoEventWireup="true" CodeBehind="NoLogout.master.cs" Inherits="mdc_daycamp.NoLogout" %>
 
 <!DOCTYPE html>
 
@@ -32,7 +32,8 @@
 
 
 </head>
-<body>
+<body class="bg-cloud">
+
     <!-- ============= HEADER ============= -->
     <header>
         <nav class="navbar navbar-default navbar-static-top navbar-md">
@@ -46,23 +47,18 @@
                         </section>
                     </a>
                 </div>
-                <div>
-                    <ul class="nav navbar-nav navbar-right">
-                        <li><a href="/Logout.aspx">
-                            <img src="/Images/logout-white.svg" />Logout
-                        </a></li>
-                    </ul>
-                </div>
-                <!-- /.navbar-collapse -->
             </div>
             <!-- /.container-fluid -->
         </nav>
     </header>
     <!-- ============= END HEADER ============= -->
 
-    <form runat="server">
-        <asp:ContentPlaceHolder ID="MainContent" runat="server">
+    <form id="form1" runat="server">
+    <div>
+        <asp:ContentPlaceHolder ID="ContentPlaceHolder1" runat="server">
+        
         </asp:ContentPlaceHolder>
+    </div>
     </form>
 
     <script>
@@ -73,8 +69,7 @@
             $("#datebox3").datepicker();
             $("#datebox4").datepicker();
         });
-
-
     </script>
+
 </body>
 </html>

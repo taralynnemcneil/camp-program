@@ -1,0 +1,669 @@
+.bg-cloud {
+    background-image: url(../Images/bg.jpg);
+    background-size: contain cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    min-height: 100vh;
+}
+
+.bg-cloud main {
+    padding-top: 90px;
+}
+
+main {
+	padding-top: 30px;
+}
+
+/* List Styles */
+
+ul {
+    list-style: none;
+}
+
+/* Font Styles */
+
+h1, h2, h3, h4, h5, h6 {
+    font-family: 'Georgia', 'Garamond', 'Times New Roman', 'Times', serif;
+    line-height: 1.3;
+} 
+
+
+p {
+    font-family: 'Helvetica', 'Arial', 'Open Sans', sans-serif;
+    font-size: 15px;
+    line-height: 1.5;
+}
+
+/* ============ Navbar Styles ============ */
+.navbar-md {
+    height: 100%;
+    background: linear-gradient(to bottom, #225f90 0%,#1f5886 50%,#1b4b72 100%);
+}
+
+
+.navbar-md .navbar-brand {
+    display: flex;
+    justify-content: space-between;
+    width: 340px;
+    color: #FFF;
+}
+
+.navbar-md .navbar-brand img {
+    height: 70px;
+    padding-bottom: 14px;
+}
+
+.navbar-md .navbar-brand h5 {
+    font-family: 'Georgia', 'Garamond', 'Times New Roman', Times, serif;
+    font-size: 21px;
+    text-transform: uppercase;
+    line-height: 0;
+}
+
+.navbar-md .navbar-brand h6 {
+    font-family: 'Georgia', 'Garamond', 'Times New Roman', Times, serif;
+    font-size: 18px;
+}
+
+.navbar-md .navbar-nav > li > a > img {
+    width: 30px;
+    vertical-align: bottom;
+    padding-right: 5px;
+}
+
+.navbar-md .navbar-nav > li > a {
+    padding-top:30px; 
+    padding-bottom:30px;
+    color: #FFF;
+    font-family: 'Georgia', 'Garamond', 'Times New Roman', Times, serif;
+    font-size: 15px;
+    text-transform: uppercase;
+    border-left: 2pt solid white;
+}
+
+.navbar-md .navbar-nav > li > a:hover {
+    color: #FFF;
+    background: linear-gradient(to bottom, #bc3333 0%, #b23030 50%, #a82d2d 100%);
+}
+
+.navbar-md .navbar-brand {
+    height: 80px
+}
+
+.navbar-md .navbar-brand:hover {
+    color: #FFF;
+}
+
+.navbar-md .navbar-toggle {
+    margin: 12px 24px 12px 0px; 
+    padding: 12px 14px 12px 14px;
+}
+
+.navbar-md .navbar-toggle .icon-bar {
+    width: 38px;
+}
+
+/* ============ Table Styles ============ */
+
+.table {
+    border: none;
+}
+
+.table > tbody {
+    border: none;
+}
+
+.table > tbody > tr > th, .table > tbody > tr > td{
+    border: none;
+    padding: 15px;
+}
+
+
+.table-striped>tbody>tr:nth-child(odd):first-of-type>th {
+    background-color: #225f90 !important;
+}
+
+ .table > tbody > tr:first-of-type {
+    font-family: 'Georgia', 'Garamond', 'Times New Roman', 'Times', serif;
+    text-transform: uppercase;
+    font-size: 20px;
+    color: #FFF;
+}
+
+ .table-striped>tbody>tr:nth-child(odd)>td {
+     background-color: #ededed;
+ }
+
+ #paymentTable tr:nth-child(odd) td {
+     background-color: #fff;
+     padding: 40px 0 0 0;
+ }
+
+.table tbody > tr > td {
+    padding-left: 15px;
+    font-family: 'Helvetica', 'Arial', 'Open Sans', sans-serif;
+    font-size: 15px;
+    line-height: 1.5;
+}
+
+.table-hover > tbody > tr:hover > td {
+    color: #1b4b72;
+    background-color: #d4dde1;
+    border-top: 1pt solid #1b4b72;
+    border-bottom: 1pt solid #1b4b72;
+}
+
+table.scroll {
+    width: 100%;
+}
+
+table.scroll tbody,
+table.scroll thead { display: block; }
+
+thead tr th { 
+    height: 30px;
+    line-height: 30px;
+}
+
+table.scroll tbody {
+    height: 270px;
+    overflow-y: auto;
+    overflow-x: hidden;
+}
+
+tbody td, thead th {
+    width: 10%;
+}
+
+.paymentTable {
+    padding: 70px 0;
+}
+
+/* ============ Button Styles ============ */
+.btn {
+    background-color: #1b4b72;
+    font-family: 'Georgia', 'Garamond', 'Times New Roman', 'Times', serif;
+    text-transform: capitalize;
+    font-size: 16px;
+    line-height: 1.3;
+}
+
+.btn:hover {
+    background-color: #BC3333;
+}
+
+.backBtn {
+    margin: 20px 0;
+    width: 50px;
+}
+
+.reportsBtn {
+    margin: 10px 0;
+    font-family: 'Georgia', 'Garamond', 'Times New Roman', 'Times', serif;
+    font-size: 23px;
+}
+
+.previousBtn {
+    display: flex;
+    justify-content: space-between;
+}
+
+/* ============ Radio Buttons ============ */
+.radio {
+  padding-left: 20px;
+}
+
+.radio label {
+  display: inline-block;
+  vertical-align: middle;
+  position: relative;
+  padding-left: 5px;
+}
+
+.radio label::before {
+  content: "";
+  display: inline-block;
+  position: absolute;
+  width: 17px;
+  height: 17px;
+  left: 0;
+  margin-left: -20px;
+  border: 1px solid #cccccc;
+  border-radius: 50%;
+  background-color: #fff;
+  transition: border 0.15s ease-in-out;
+}
+
+.radio label::after {
+  display: inline-block;
+  position: absolute;
+  content: " ";
+  width: 11px;
+  height: 11px;
+  left: 3px;
+  top: 3px;
+  margin-left: -20px;
+  border-radius: 50%;
+  background-color: #555555;
+  transform: scale(0, 0);
+  transition: transform 0.1s cubic-bezier(0.8, -0.33, 0.2, 1.33);
+}
+
+.radio input[type="radio"] {
+  opacity: 0;
+  z-index: 1;
+  cursor: pointer;
+}
+
+.radio input[type="radio"]:focus + label::before {
+  outline: thin dotted;
+  outline: 5px auto;
+  outline-offset: -2px;
+}
+
+.radio input[type="radio"]:checked + label::after {
+  transform: scale(1, 1);
+}
+
+.radio input[type="radio"]:disabled {
+  cursor: not-allowed;
+}
+
+.radio input[type="radio"]:disabled + label {
+  opacity: 0.65;
+}
+
+.radio input[type="radio"]:disabled + label::before {
+  cursor: not-allowed;
+}
+
+.radio.radio-inline {
+  margin-top: 0;
+}
+
+.radio-primary input[type="radio"] + label::after {
+  background-color: #337ab7;
+}
+
+.radio-primary input[type="radio"]:checked + label::before {
+  border-color: #337ab7;
+}
+
+.radio-primary input[type="radio"]:checked + label::after {
+  background-color: #337ab7;
+}
+
+.radio-danger input[type="radio"] + label::after {
+  background-color: #d9534f;
+}
+
+.radio-danger input[type="radio"]:checked + label::before {
+  border-color: #d9534f;
+}
+
+.radio-danger input[type="radio"]:checked + label::after {
+  background-color: #d9534f;
+}
+
+.radio-info input[type="radio"] + label::after {
+  background-color: #5bc0de;
+}
+
+.radio-info input[type="radio"]:checked + label::before {
+  border-color: #5bc0de;
+}
+
+.radio-info input[type="radio"]:checked + label::after {
+  background-color: #5bc0de;
+}
+
+.radio-warning input[type="radio"] + label::after {
+  background-color: #f0ad4e;
+}
+
+.radio-warning input[type="radio"]:checked + label::before {
+  border-color: #f0ad4e;
+}
+
+.radio-warning input[type="radio"]:checked + label::after {
+  background-color: #f0ad4e;
+}
+
+.radio-success input[type="radio"] + label::after {
+  background-color: #5cb85c;
+}
+
+.radio-success input[type="radio"]:checked + label::before {
+  border-color: #5cb85c;
+}
+
+.radio-success input[type="radio"]:checked + label::after {
+  background-color: #5cb85c;
+}
+
+input[type="checkbox"].styled:checked + label:after,
+input[type="radio"].styled:checked + label:after {
+  font-family: 'FontAwesome';
+  content: "\f00c";
+}
+
+input[type="checkbox"] .styled:checked + label::before,
+input[type="radio"] .styled:checked + label::before {
+  color: #fff;
+}
+
+input[type="checkbox"] .styled:checked + label::after,
+input[type="radio"] .styled:checked + label::after {
+  color: #fff;
+}
+
+/* ============ Section Headings ============ */
+
+
+.tableTitle {
+    display: flex;
+    justify-content: space-between;
+    align-items: baseline;
+}
+
+.tableTitle a {
+    height: 100%;
+}
+
+.alignCenter {
+    display: flex;
+    justify-content: space-between;
+    align-items: center !important;
+}
+
+.blueHeading {
+    background-color: #1b4b72;
+    color: #FFF;
+}
+
+.greyHeading {
+    background-color: #404041;
+    color: #FFF;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.blueHeading h3, .greyHeading h3 {
+    font-size: 25px;
+    padding: 10px;
+    margin: 0;
+}
+
+.marginTop {
+    margin-top: 30px;
+}
+
+/* =========================================================
+    Home/Login Page
+========================================================== */
+.panel-parent {
+	border-color: #ccc;
+	box-shadow: 0px 2px 3px 0px rgba(0,0,0,0.2);
+}
+
+.panel-parent>.panel-heading {
+	color: #00415d;
+	background-color: #fff;
+	border-color: #fff;
+	text-align:center;
+}
+
+.panel-parent>.panel-heading a{
+	text-decoration: none;
+	color: #666;
+	font-weight: bold;
+	font-size: 15px;
+	transition: all 0.1s linear;
+}
+
+.panel-parent>.panel-heading a.active{
+	color: #BC3333;
+	font-size: 18px;
+}
+
+.panel-parent>.panel-heading hr{
+	margin-top: 10px;
+	margin-bottom: 0px;
+	clear: both;
+	border: 0;
+	height: 1px;
+	background-image: linear-gradient(left,rgba(0,0,0,0),rgba(0,0,0,0.15),rgba(0,0,0,0));
+}
+
+.panel-parent input[type="text"],.panel-parent input[type="email"],.panel-parent input[type="password"] {
+	height: 45px;
+	border: 1px solid #ddd;
+	font-size: 16px;
+	transition: all 0.1s linear;
+}
+
+.panel-parent input:hover,
+.panel-parent input:focus {
+	outline:none;
+	box-shadow: none;
+	border-color: #ccc;
+}
+
+.btn-parent {
+	outline: none;
+	color: #fff;
+	font-size: 14px;
+	height: auto;
+	font-weight: normal;
+	padding: 14px 0;
+	text-transform: uppercase;
+}
+
+
+.forgot-password {
+	text-decoration: underline;
+	color: #888;
+}
+
+.forgot-password:hover,
+.forgot-password:focus {
+	text-decoration: underline;
+	color: #666;
+}
+
+.btn-staff {
+	outline: none;
+	color: #fff;
+	font-size: 14px;
+	height: auto;
+	font-weight: normal;
+	padding: 14px 0;
+	text-transform: uppercase;
+}
+
+.btn-parent:hover,
+.btn-parent:focus,
+.btn-staff:hover,
+.btn-staff:focus {
+	color: #fff;
+}
+
+/*=========================================
+    Staff Home Page
+=========================================*/
+
+/* Staff Home Page */
+.staffButtons li {
+    width: 40%;
+    text-align: center !important;
+    margin: 0 40px 30px;
+    padding: 30px 0 20px;
+    border: 1pt solid #808080;
+    border-radius: 20px;
+}
+
+.staffButtons li a p {
+    font-family: 'Georgia', 'Garamond', 'Times New Roman', Times, serif;
+	font-weight: bold;
+	font-size: 24px;
+    padding-top: 10px;
+    color: #404041;
+}
+
+.staffButtons li a:hover {
+    color: #1d517a;
+    text-decoration: none;
+}
+
+.icon {
+    width: 36%;
+}
+
+.reportIcon {
+    margin-left: -30px;
+}
+
+/*=========================================
+    Sign IN/OUT Page
+=========================================*/
+
+/* ========== Sign In/Out Form ==========*/
+.signInOutForm {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.signInOutForm div {
+    margin-top: 40px;
+}
+
+.signInOutForm div label {
+    font-size: 18px;
+}
+
+.rightAligned {
+    text-align: right;
+}
+
+.signInOutForm button {
+    margin-top: 30px;
+}
+
+/*=========================================
+    Form
+=========================================*/
+
+.form-horizontal .form-group {
+    margin-right: 0;
+    margin-left: 0;
+}
+
+.form input {
+    width: 100%;
+}
+
+/* =========================================
+	Media Query Styles
+========================================== */
+@media (max-width: 990px) {
+    .staffButtons {
+        padding: 0;
+    }
+    
+    .staffButtons li {
+        width: 38%;
+    }
+
+    .icon {
+        width: 50%;
+    }
+
+}
+
+@media (max-width: 770px) {
+	.rightAligned {
+		text-align: center;
+	}
+
+	section {
+		text-align: center;
+	}
+
+	.loginPage main ul {
+		padding: 0;
+	}
+
+	.loginPage main ul li a.btn-primary {
+	    margin-top: 0px;
+	    width: 100%;
+    }
+
+    .staffButtons {
+        padding: 0;
+    }
+    
+    .staffButtons li {
+        width:80%;
+    }
+
+    .navbar-md .navbar-brand {
+        justify-content: flex-start;
+        width: 100%;
+    }
+
+    .navbar-md .navbar-brand h5 {
+        font-size: 18px;
+        line-height: 6pt;
+    }
+
+    .navbar-md .navbar-brand h6 {
+        font-size: 16px;
+    }
+
+}
+
+@media (max-width: 326px) {
+    .navbar-md {
+        height: 160px;
+    }
+
+    .navbar-header {
+        height: 100%
+    }
+
+    .navbar-md .navbar-brand {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        color: #FFF;
+        line-height: 1em;
+    }
+
+    .navbar-md .navbar-brand img {
+        height: 90px;
+        padding-bottom: 0;
+    }
+
+    .navbar-md .navbar-brand a {
+        line-height: 0em;
+    }
+
+    .navbar-md .navbar-brand h5 {
+        font-family: 'Georgia', 'Garamond', 'Times New Roman', Times, serif;
+        text-transform: uppercase;
+        line-height: 1em;
+        margin-top: 0;
+        font-size: 16px;
+    }
+
+    .navbar-md .navbar-brand h6 {
+        font-family: 'Georgia', 'Garamond', 'Times New Roman', Times, serif;
+        font-size: 16px !important;
+        line-height: 1em;
+        padding-bottom:  3px;
+        margin-bottom:  0
+    }
+}
+

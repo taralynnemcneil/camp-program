@@ -7,11 +7,11 @@
 // </auto-generated>
 //------------------------------------------------------------------------------
 
-namespace mdc_daycamp
+namespace mdc_daycamp.Staff
 {
 
 
-    public partial class Contact
+    public partial class StaffDashboard
     {
     }
 }
